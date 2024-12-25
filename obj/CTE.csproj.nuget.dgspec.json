@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Nathalia\\Documents\\Project\\CTE-Api\\CTE-Api.csproj": {}
+    "C:\\Users\\Nathalia\\Documents\\Project\\CTE\\CTE.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Nathalia\\Documents\\Project\\CTE-Api\\CTE-Api.csproj": {
+    "C:\\Users\\Nathalia\\Documents\\Project\\CTE\\CTE.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Nathalia\\Documents\\Project\\CTE-Api\\CTE-Api.csproj",
-        "projectName": "CTE-Api",
-        "projectPath": "C:\\Users\\Nathalia\\Documents\\Project\\CTE-Api\\CTE-Api.csproj",
+        "projectUniqueName": "C:\\Users\\Nathalia\\Documents\\Project\\CTE\\CTE.csproj",
+        "projectName": "CTE",
+        "projectPath": "C:\\Users\\Nathalia\\Documents\\Project\\CTE\\CTE.csproj",
         "packagesPath": "C:\\Users\\Nathalia\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Nathalia\\Documents\\Project\\CTE-Api\\obj\\",
+        "outputPath": "C:\\Users\\Nathalia\\Documents\\Project\\CTE\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Nathalia\\AppData\\Roaming\\NuGet\\NuGet.Config"

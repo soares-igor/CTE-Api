@@ -1,6 +1,6 @@
-@CTE_Api_HostAddress = http://localhost:5173
+@CTE_HostAddress = http://localhost:5041
 
-GET {{CTE_Api_HostAddress}}/weatherforecast/
+GET {{CTE_HostAddress}}/weatherforecast/
 Accept: application/json
 
 ###
