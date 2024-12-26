@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "GqZaK5cVS9M=",
+  "dgSpecHash": "LhbdmvT7U3E=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Nathalia\\Documents\\Project\\CTE\\CTE.csproj",
+  "projectFilePath": "C:\\Users\\Nathalia\\Documents\\Project\\CTE-Api\\CTE-Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Nathalia\\.nuget\\packages\\microsoft.aspnetcore.openapi\\8.0.11\\microsoft.aspnetcore.openapi.8.0.11.nupkg.sha512",
     "C:\\Users\\Nathalia\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",

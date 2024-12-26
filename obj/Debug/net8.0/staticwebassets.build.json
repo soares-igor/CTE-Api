@@ -1,8 +1,8 @@
 {
   "Version": 1,
-  "Hash": "HMQkVusQhiX6a8cvDufvm7MxpA6+X1tx2kszyvKcpCI=",
-  "Source": "CTE",
-  "BasePath": "_content/CTE",
+  "Hash": "4OtyZXczQlq5J5VtVsSWK9H2+lRCOnW0clsdpkCccRE=",
+  "Source": "CTE-Api",
+  "BasePath": "_content/CTE-Api",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],

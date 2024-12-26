@@ -5289,11 +5289,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Nathalia\\Documents\\Project\\CTE\\CTE.csproj",
-      "projectName": "CTE",
-      "projectPath": "C:\\Users\\Nathalia\\Documents\\Project\\CTE\\CTE.csproj",
+      "projectUniqueName": "C:\\Users\\Nathalia\\Documents\\Project\\CTE-Api\\CTE-Api.csproj",
+      "projectName": "CTE-Api",
+      "projectPath": "C:\\Users\\Nathalia\\Documents\\Project\\CTE-Api\\CTE-Api.csproj",
       "packagesPath": "C:\\Users\\Nathalia\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Nathalia\\Documents\\Project\\CTE\\obj\\",
+      "outputPath": "C:\\Users\\Nathalia\\Documents\\Project\\CTE-Api\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Nathalia\\AppData\\Roaming\\NuGet\\NuGet.Config"

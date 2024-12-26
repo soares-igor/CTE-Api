@@ -6,6 +6,9 @@ namespace CTE.Controllers;
 [Route("api/[controller]")]
 public class CteController : ControllerBase
 {
+    /*Resolvi colocar tudo em um só método, por mais que não seja viável, para que eu pudesse entregar
+     o projeto pelo menos funcionando e com teste unitário, pois ao meu ver caso colocasse mais métodos,
+     é necessário a inclusão de mais testes para que a aplicação não quebre em alguma parte*/
     [HttpPost("calcular")]
     public IActionResult CalcularCte([FromBody] CteRequest request)
     {
@@ -33,20 +36,23 @@ public class CteController : ControllerBase
             // Calcular o valor total do CT-e
             var valorTotalCte = valorFrete + valorIcms;
 
-            // Retornar os valores calculados e informações adicionais
+            /* Retornar os valores calculados e informações adicionais
+             Entendi que as informações, como quantidade, origem, destino, são dados que são necessários apenas
+             para envio, nesse cenário não são utilizados para cálculos
+             */
             var response = new CteResponse
             {
                 ValorFrete = valorFrete,
                 ValorIcms = valorIcms,
                 ValorTotalCte = valorTotalCte,
-                Informacoes = new
+                Informacoes = new InformacoesResponse
                 {
-                    request.Quantidade,
-                    request.Volume,
-                    request.Origem,
-                    request.Destino,
-                    request.DistanciaKm,
-                    request.InicioOperacao
+                    Quantidade = request.Quantidade,
+                    Volume = request.Volume,
+                    Origem = request.Origem,
+                    Destino = request.Destino,
+                    DistanciaKm = request.DistanciaKm,
+                    InicioOperacao = request.InicioOperacao
                 }
             };
 
@@ -77,11 +83,24 @@ public class CteRequest
     public DateTime InicioOperacao { get; set; } // Data e hora de início
 }
 
-// Modelo de resposta
+/* Aqui precisei incluir a definição de cada atributo da classe, pois estava dando conflito no teste
+unitário que estava fazendo
+*/
+public class InformacoesResponse
+{
+    public int Quantidade { get; set; }
+    public decimal Volume { get; set; }
+    public string Origem { get; set; }
+    public string Destino { get; set; }
+    public double DistanciaKm { get; set; }
+    public DateTime InicioOperacao { get; set; }
+}
+
+// Atualizando a resposta do controlador
 public class CteResponse
 {
     public decimal ValorFrete { get; set; }
     public decimal ValorIcms { get; set; }
     public decimal ValorTotalCte { get; set; }
-    public object Informacoes { get; set; } // Dados adicionais sobre a operação
+    public InformacoesResponse Informacoes { get; set; } // Usando o modelo criado para Informacoes
 }
